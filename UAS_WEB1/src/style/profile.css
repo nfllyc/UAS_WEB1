@@ -1,0 +1,157 @@
+body {
+    font-family: "Verdana";
+    background-color: #F5EFFF;
+    margin: 0px;
+}
+.logo{
+    width: 200px;
+    display: flex;
+    margin-left: 0;
+}
+.header {
+    background-color: #d4a8fb;
+    color: white;
+    font-family: "verdana";
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}  
+.nav {
+    margin-left: auto;
+}
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #a151e7;
+    font-weight: 600;
+}
+.nav a:hover {
+    color: #4a148c;   
+    font-weight: bold;
+    }
+.nav a:active {
+    color: #2e0a5f;
+    font-weight: bold;
+    border-bottom: 2px solid #2e0a5f;
+    }     
+ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.header-button {
+    text-decoration: none;
+    color: darkviolet;
+    background-color: rgb(255, 42, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+} 
+.img{
+    width: 350px;
+    display: block;
+    margin: 0 auto 20px;
+    margin-bottom: 10px;
+}
+
+.profile-container {
+    width: 60%;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.app-desc {
+    text-align: justify;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.profile-info p {
+    text-align: center;
+    margin: 8px 0;
+    color: #444;
+}
+p{
+    margin: 15px;
+    margin-bottom: 20px;
+}
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.card h1,
+.card h2 {
+    color: #5b2d91;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    text-align: center;
+    margin: 10px 0;
+    color: #444;
+}
+footer {
+    background-color: #d4a8fb; 
+    color: #ffffff;
+    font-family: Verdana;
+    }
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 10px;
+    width: auto;
+}
+
+.footer-identitas h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-alamat address {
+    font-style: normal; 
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-bottom {
+    background-color: #54108f; 
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
