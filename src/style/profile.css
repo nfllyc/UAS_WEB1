@@ -98,7 +98,6 @@ p {
     margin: 15px 0;
 }
 
-/* ================= FOOTER ================= */
 footer {
     background-color: #d4a8fb;
     color: #ffffff;
@@ -133,69 +132,45 @@ footer {
     margin: 0;
     font-size: 13px;
 }
-
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        gap: 10px;
-    }
-
-    .menu {
-        flex-wrap: wrap;
+        align-items: center;
         justify-content: center;
+        gap: 12px;
     }
 
     .logo {
         width: 150px;
     }
 
-    .profile-container {
-        width: 90%;
-        margin: 50px auto;
-        padding: 20px;
+    .nav {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .img {
-        width: 250px;
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
     }
-}
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 22px;
+    .menu li {
+        margin: 0;
     }
 
-    p {
+    .nav a {
+        margin: 0;
         font-size: 14px;
-    }
-
-    .img {
-        width: 200px;
-    }
-
-    .card {
-        padding: 20px;
     }
 }
 
 .header .logo {
-  width: 150px;
-}
-
-.profile-container .logo {
-  width: 200px;
-  margin: 30px auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .header {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .nav {
-    margin-left: 0;
-  }
+    display: block;
 }
 
