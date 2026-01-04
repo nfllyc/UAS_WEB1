@@ -222,3 +222,14 @@ footer {
         padding: 30px;
     }
 }
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.transaksi-header span,
+.transaksi-row span {
+    white-space: nowrap;
+}
+
