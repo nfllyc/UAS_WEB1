@@ -5,9 +5,14 @@ body {
 }
 .logo{
     width: 200px;
-    display: flex;
+    display: block;
     margin-left: 0;
 }
+
+.header .logo {
+    display: block;
+}
+
 .header {
     background-color: #d4a8fb;
     color: white;
@@ -180,13 +185,11 @@ ul {
     display: inline-block;
   }
   
-  /* SIMPANAN */
   .badge-simpanan {
     background: #dcfce7;
     color: #166534;
   }
   
-  /* PINJAMAN */
   .badge-pinjaman {
     background: #fee2e2;
     color: #991b1b;
@@ -224,47 +227,45 @@ ul {
     text-align: center;
     padding: 15px 10px;
 }
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .container {
-        max-width: 100%;
-        margin: 40px auto;
-        padding: 25px;
-        border-radius: 12px;
-    }
-
-    .logo {
-        width: 200px;
-    }
-
-    label {
-        font-size: 14px;
-    }
-
-    .input-field {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .button-login {
-        font-size: 14px;
-        padding: 10px;
-    }
-}
 
 @media (max-width: 768px) {
-    .container {
-        margin: 60px auto;
-        padding: 40px;
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
     }
 
     .logo {
-        width: 280px;
+        width: 150px;
+    }
+
+    .nav {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 14px;
     }
 }
+
 
 
 .footer-bottom p {
