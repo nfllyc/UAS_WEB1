@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
     <title> FUNTOMINE </title>
-    <link rel="stylesheet" href="../style/login.css">
 </head>
-<body> 
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/FUNTOMINE_LOGO.png" class="logo" alt="Funtomine Logo">
+        </div>
+
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html" class="active"> BERANDA</a></li>
+                <li><a href="./pages/transactions.html"> TRANSAKSI</a></li>
+                <li><a href="./pages/profile.html">PROFILE</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section>
-            <img src="../img/FUNTOMINE_LOGO.png" class="logo">
-            <div class="container">
-                <form >
-                    <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="input-field">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" class="input-field">
-                    </div>
-                    <button class="button-login" onclick="document.location.href='index.html'">Login</button>
-                </form>
-            </div>
+        <section class="welcome">
+            <img src="./img/profil.jpg" class="avatar" alt="Admin Profile Picture">
+            <h1> Admin</h1>
+            <p><span class="badge-admin"> FUNTOMINE ADMINISTRATOR CORE</span>
+            </p>
         </section>
+
+        <div class="admin-content-wrapper">
+            <div class="tips-admin">
+                <h3> Tips Admin</h3>
+                <p>
+                    Pastikan simpanan wajib dicatat sebelum akhir bulan agar laporan keuangan tetap akurat.
+                </p>
+            </div>
+
+            <section class="how-section">
+                <h2> Selamat datang Kembali, Admin!</h2>
+                <p> Kelola koperasi simpan pinjam secara cepat, rapi, dan transparan.</p>
+                <div class="info-cards"> 
+                    <div class="info-card">
+                        <h3> Simpanan</h3>
+                        <p> Catat dan pantau semua simpanan anggota (pokok, wajib, sukarela).</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3> Pinjaman</h3>
+                        <p> Kelola pinjaman anggota, jumlah, jangka waktu, dan statusnya.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Transaksi</h3>
+                        <p>Rekam pemasukan & pengeluaran, serta riwayat transaksi koperasi.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Laporan Keuangan </h3>
+                        <p> Lihat ringkasan total simpanan, pinjaman, dan kondisi keuangan.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
     
+    <footer>
+        <div class="footer-container">
+            <div class="footer-identitas">
+                <h3> Funtomine Cooperative </h3>
+            </div>
+            <div class="footer-alamat">
+                <address>
+                    Universitas Pamulang, Falkutas Ilmu Komputer, Prodi Sistem Informasi
+                </address>
+            </div>
+        </div>
+            <div class="footer-bottom">
+            <p>
+                &copy; 2026 Lidya Luluatun Nafisah (251011700827). All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+</body>
 </html>
