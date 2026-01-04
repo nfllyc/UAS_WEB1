@@ -1,140 +1,116 @@
-body {
-    font-family: "Verdana";
-    background-color: #F5EFFF;
-    margin: 0px;
-}
-.logo{
-    width: 200px;
-    display: block;
-    margin-left: 0;
+* {
+    box-sizing: border-box;
+    font-family: Verdana;
 }
 
-.header .logo {
-    display: block;
+body {
+    margin: 0;
+    background-color: #F5EFFF;
 }
 
 .header {
     background-color: #d4a8fb;
-    color: white;
-    font-family: "verdana";
-    padding: 10px 15px;
+    padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
 }
+
+.header .logo {
+    width: 160px;
+    display: block;
+}
+
+.nav {
+    display: flex;
+}
+
 .menu {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0;
     margin: 0;
-}  
-.nav {
-    margin-left: auto;
 }
+
+.menu li {
+    display: inline-block;
+}
+
 .nav a {
-    margin-left: 20px;
     text-decoration: none;
     color: #a151e7;
     font-weight: 600;
 }
+
 .nav a:hover {
-    color: #4a148c;   
-    font-weight: bold;
-    }
-.nav a:active {
-    color: #2e0a5f;
-    font-weight: bold;
-    border-bottom: 2px solid #2e0a5f;
-    }     
-ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    color: #4a148c;
 }
-.menu li {
-    display: inline-block;
-    margin-right: 20px;
+
+.nav a.active {
+    border-bottom: 2px solid #4a148c;
 }
-.header-button {
-    text-decoration: none;
-    color: darkviolet;
-    background-color: rgb(255, 42, 255);
-    padding: 10px 15px;
-    border-radius: 5px;
-}
-* {
-    box-sizing: border-box;
-    font-family: Verdana;
-  }
-  
-  body {
-    margin: 0;
-    background: #f4f0ff;
-  }
-  .summary {
+
+.summary {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 40px; 
+    padding: 40px;
 }
-  .card-simpanan,
+
+.card-simpanan,
 .card-pinjaman {
-    margin: 30px;
     background: white;
     padding: 25px;
-    min-height: 70px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
 }
+
 .card-simpanan h3,
 .card-pinjaman h3 {
     font-size: 14px;
     color: #6B7280;
-    margin-bottom: 10px;
 }
 
-.card-simpanan p,
+.card-simpanan p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #16A34A;
+}
+
 .card-pinjaman p {
     font-size: 18px;
-    font-weight: 700;
-}
-.card-simpanan p {
-    color: #16A34A; /* hijau */
+    font-weight: bold;
+    color: #DC2626;
 }
 
-.card-pinjaman p {
-    color: #DC2626; /* merah */
-}
-
-  .container {
+.container {
     padding: 60px;
-  }
-  
-  .form-box {
+}
+
+.form-box {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 20px;
-    color: #260444;
     margin-top: 20px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
-    margin-top: 16px;
+    margin-top: 15px;
     margin-bottom: 6px;
     font-weight: 600;
-  }
-  
-  input, select {
+}
+
+input, select {
     width: 100%;
     padding: 8px;
     border-radius: 8px;
     border: 1.5px solid #333;
-  }
-  
-  button {
+}
+
+button {
     margin-top: 20px;
     padding: 10px;
     width: 100%;
@@ -142,133 +118,107 @@ ul {
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 15px;
     cursor: pointer;
-  }
-  
-  .transaksi-box {
+}
+
+.transaksi-box {
     margin-top: 30px;
     background: #8239d5;
     padding: 16px;
     border-radius: 16px;
-  }
-  
-  .transaksi-header {
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.transaksi-header,
+.transaksi-row {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 2.5fr 1.5fr 1.5fr;
+    text-align: center;
+    align-items: center;
+    min-width: 700px;
+}
+
+.transaksi-header {
     background: rgba(255,255,255,0.25);
     color: white;
     font-weight: bold;
     padding: 12px;
     border-radius: 10px;
     margin-bottom: 10px;
-  }
-  
-  .transaksi-header,
-  .transaksi-row {
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 2.5fr 1.5fr 1.5fr;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .transaksi-row {
+}
+
+.transaksi-row {
     background: white;
     color: #333;
     padding: 12px;
     border-radius: 10px;
     margin-bottom: 8px;
-  }
-  .badge {
+}
+
+/* BADGE */
+.badge {
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 13px;
     font-weight: 600;
-    display: inline-block;
-  }
-  
-  .badge-simpanan {
+}
+
+.badge-simpanan {
     background: #dcfce7;
     color: #166534;
-  }
-  
-  .badge-pinjaman {
+}
+
+.badge-pinjaman {
     background: #fee2e2;
     color: #991b1b;
-  }
-  footer {
-    background-color: #d4a8fb; 
-    color: #ffffff;
-    font-family: Verdana;
-    }
+}
+
+footer {
+    background-color: #d4a8fb;
+    color: white;
+}
 
 .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     padding: 40px 20px;
-    gap: 10px;
-    width: auto;
-}
-
-.footer-identitas h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
-
-.footer-alamat address {
-    font-style: normal; 
-    font-size: 14px;
-    opacity: 0.9;
 }
 
 .footer-bottom {
-    background-color: #54108f; 
+    background-color: #54108f;
     text-align: center;
-    padding: 15px 10px;
+    padding: 15px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
 }
 
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 12px;
     }
 
-    .logo {
-        width: 150px;
-    }
-
-    .nav {
-        margin-left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+    .header .logo {
+        width: 140px;
     }
 
     .menu {
-        display: flex;
         justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
         gap: 15px;
-        padding: 0;
-        margin: 0;
     }
 
-    .menu li {
-        margin: 0;
+    .summary {
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
 
-    .nav a {
-        margin: 0;
-        font-size: 14px;
+    .container {
+        padding: 30px;
     }
-}
-
-
-
-.footer-bottom p {
-    margin: 0;
-    font-size: 13px;
 }
