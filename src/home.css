@@ -219,51 +219,27 @@ footer {
     margin: 0;
     font-size: 13px;
 }
+
 @media (max-width: 768px) {
-  .navbar {
+  .header {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    gap: 10px;
   }
 
-  .navbar img,
   .logo {
-    width: 180px;
-    margin-bottom: 10px;
+    width: 150px;
   }
 
-  .nav-menu {
-    display: flex;
+  .menu {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-}
-@media (max-width: 768px) {
-  .card-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-}
 
-@media (max-width: 480px) {
-  .card-container {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  p {
+  .nav a {
+    margin: 5px 10px;
     font-size: 14px;
-    text-align: center;
-  }
-
-  section {
-    padding: 15px;
   }
 }
 
